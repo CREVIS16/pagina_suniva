@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SUNNIVA</title>
+</head>
+<body>
+<section>
+  <div class="Circulo"> </div>
+    <header>
+        <a href="#" class="Logo"><img src="logo.jpg" alt="Logo"></a>
+        <ul>
+            <li><a href="quienes somos.html" id="enlace">¿Quiénes somos?</a></li>
+            <li><a href="https://www.google.com/maps/place/Jabillos,+La+Perla,+57820+Cdad.+Nezahualc%C3%B3yotl,+M%C3%A9x./@19.3892485,-99.0033321,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1e2d9ca9c04b3:0x3836bddb0152ca21!8m2!3d19.3892435!4d-99.0007572!16s%2Fg%2F1trc5943?entry=ttu">¿Dónde estamos?</a></li>
+            <li><a href="compras.html">Compras</a></li>
+        </ul>
+    </header>
+   <div class="contenido">
+        <div class="textBox">
+            <h2>"¡Carga tu día con la energía del sol!"<br> <span>SUNNIVA</span></h2>
+            <p>    Revolucionario cargador solar, diseñado para brindar autonomía y 
+                   energía renovable a tus   dispositivos electrónicos favoritos. Con su forma rectangular, la celda solar en la parte superior captura la energía del sol, recargando la batería interna para alimentar celulares, tablets. Más que un cargador, es tu fuente portátil ecológica de energía."</p>
+            <a href="descripcion del cargador.html" id="enlace"> Conoce Mas </a>
+        </div>
+
+        <div class="imBox">
+          <img src="CARGA.png" class="solar"> 
+        </div>
+      
+    </div>
+  <ul class="imagenes">
+    <li><img src="CARGA.png"  onclick="imgSlider('CARGA.png')"></li>
+    <li><img src="CARGA2.png" onclick="imgSlider('CARGA2.png')"></li>
+    <li><img src="CARGA3.png" onclick="imgSlider('CARGA3.png')"></li>
+  </ul>
+
+  <ul class="redes">
+    <li> <a href="https://www.facebook.com/profile.php?id=61555256372688&mibextid=ZbWKwL"><img src="facebook.png"> </a></li>
+    <li> <a href="https://www.instagram.com/sunniva105/"><img src="instagram.png"> </a></li>
+  </ul>
+</section>
+<section>
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector(".solar").src = anything;
+    }
+  </script>
+</section>
+</body>
+</html>

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .Logo img {
+  max-width: 60px;
+  height: auto;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li a {
+  
+  display: inline-block;
+  margin-left: 80px;
+  color: #333;
+  font-weight: 900;
+  text-decoration: none;
+  
+  
+}
+
+.contenido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 105vh;
+}
+
+.contenido .textBox {
+  flex-grow: 1;
+  max-width: 725px;
+}
+
+.contenido .textBox h2 {
+  color: #333;
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.contenido .textBox h2 span {
+  color: #ff8c00;
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.contenido .textBox p {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 19px;
+  line-height: 1.5;
+  padding-left: 125px;
+}
+
+.contenido .textBox a {
+  margin-top: 20px;
+  padding: 10px 25px;
+  margin-left: 350px;
+  background: #ff8c00;
+  color: #fff;
+  border-radius: 500px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  align-self: flex-start;
+  
+  
+ 
+}
+
+
+.contenido .imBox {
+  display: flex;
+  align-items: center; /* Alinea verticalmente al centro en lugar de flex-end */
+}
+
+.contenido .imBox img {
+  max-width: 80%;
+  max-height: 80%; /* Ajusta la altura al 100% para que sea proporcional al ancho */
+  width: auto;
+  height: auto;
+  margin-right: 1vw; /* Utiliza vw para un margen relativo al ancho de la pantalla */
+  margin-top: 6vh; /* Utiliza vh para un margen relativo a la altura de la pantalla */
+  z-index: 2;
+}
+
+.imagenes {
+  position: absolute;
+  left: 89%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end; /* Alinea las imágenes en la parte inferior */
+}
+
+.imagenes li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1px; /* Ajusta según sea necesario */
+  transition: 0.5s;
+}
+
+.imagenes li :hover {
+  transform: translate(-15px);
+}
+
+.imagenes img {
+  max-width: 100px; /* Ajusta el tamaño máximo de las imágenes */
+  height: auto;
+  opacity: 50;
+  
+}
+
+.redes{
+
+  position:absolute;
+  left: 98%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.redes li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 25px; /* Ajusta según sea necesario */
+  transition: 0.5s;
+}
+
+.redes li a{
+  
+  display: inline-block;
+  margin: 5px 0; 
+  transform: scale(0.6);
+}
+
+
+.Circulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Utiliza la unidad vw para el ancho en relación con el viewport */
+  height: 100vh; /* Utiliza la unidad vh para la altura en relación con el viewport */
+  background: #ff7514;
+  clip-path: circle(40% at right 90%); /* Utiliza porcentajes en lugar de píxeles en clip-path */
+}
